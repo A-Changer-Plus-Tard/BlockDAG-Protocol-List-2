@@ -1,85 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  /* This style controls the look of the list */
-  .project-list {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockDAG Protocol Library</title>
+    <style>
+        /* This section controls the Visuals (The Aesthetic) */
+        body {
+            background-color: #0d1117; /* Dark GitHub-style background */
+            color: #c9d1d9; /* Light grey text */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
 
-  .project-item {
-    margin-bottom: 25px; /* <--- CHANGE THIS NUMBER to make the space bigger or smaller */
-    padding: 10px;
-    background-color: #f4f4f4; /* Optional: adds a light grey background box */
-    border-radius: 5px;        /* Optional: rounds the corners */
-  }
+        .container {
+            width: 100%;
+            max-width: 800px; /* Limits width so it looks good on big screens */
+        }
 
-  .project-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    font-size: 1.1em;
-  }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 20px;
+        }
 
-  .project-item a:hover {
-    color: #007bff; /* Color changes when you hover */
-  }
-</style>
+        /* The Card Design */
+        .card {
+            background-color: #161b22; /* Slightly lighter dark box */
+            border: 1px solid #30363d; /* Subtle border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px;
+            margin-bottom: 20px; /* THIS creates the space between items */
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #58a6ff; /* Blue border when you hover */
+            transform: translateY(-2px); /* Moves up slightly on hover */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #58a6ff; /* Blue Title */
+            margin-bottom: 8px;
+        }
+
+        .card-link {
+            display: block;
+            color: #8b949e;
+            text-decoration: none;
+            font-size: 0.9rem;
+            word-break: break-all; /* Ensures long links don't break the layout */
+        }
+
+        .card-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-<h2>BlockDAG Protocol Versions</h2>
+<div class="container">
+    <h1>BlockDAG Protocol Versions</h1>
 
-<ul class="project-list">
+    <div class="card">
+        <div class="card-title">GITHUB PROFILE</div>
+        <a class="card-link" href="https://github.com/A-Changer-Plus-Tard?tab=repositories" target="_blank">https://github.com/A-Changer-Plus-Tard?tab=repositories</a>
+    </div>
 
-  <li class="project-item">
-    <div>GITHUB PROFILE</div>
-    <a href="https://github.com/A-Changer-Plus-Tard?tab=repositories">https://github.com/A-Changer-Plus-Tard?tab=repositories</a>
-  </li>
+    <div class="card">
+        <div class="card-title">BlockDag-Launch-Protocol-v2.6</div>
+        <a class="card-link" href="https://a-changer-plus-tard.github.io/BlockDag-Launch-Protocol-v2.6/" target="_blank">https://a-changer-plus-tard.github.io/BlockDag-Launch-Protocol-v2.6/</a>
+    </div>
 
-  <li class="project-item">
-    <div>BlockDag-Launch-Protocol-v2.6</div>
-    <a href="https://a-changer-plus-tard.github.io/BlockDag-Launch-Protocol-v2.6/">View Protocol v2.6 Site</a>
-  </li>
+    <div class="card">
+        <div class="card-title">Protocol-v2.6-Comparaison-2</div>
+        <a class="card-link" href="https://a-changer-plus-tard.github.io/Protocol-v2.6-Comparaison-2/" target="_blank">https://a-changer-plus-tard.github.io/Protocol-v2.6-Comparaison-2/</a>
+    </div>
 
-  <li class="project-item">
-    <div>Protocol-v2.6-Comparaison-2</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-v2.6-Comparaison-2/">View Comparaison 2 Site</a>
-  </li>
+    <div class="card">
+        <div class="card-title">Protocol-3.0</div>
+        <a class="card-link" href="https://a-changer-plus-tard.github.io/Protocol-3.0/" target="_blank">https://a-changer-plus-tard.github.io/Protocol-3.0/</a>
+    </div>
 
-  <li class="project-item">
-    <div>Protocol-3.0</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-3.0/">View Protocol 3.0 Site</a>
-  </li>
+    <div class="card">
+        <div class="card-title">Protocol-v5.3 (Bonus 36 Months)</div>
+        <a class="card-link" href="https://a-changer-plus-tard.github.io/Protocol-v5.3-Original-Protocol-Bonus-36-Months-/" target="_blank">https://a-changer-plus-tard.github.io/Protocol-v5.3-Original-Protocol-Bonus-36-Months-/</a>
+    </div>
 
-  <li class="project-item">
-    <div>Protocol-v5.3 (Bonus 36 Months)</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-v5.3-Original-Protocol-Bonus-36-Months-/">View Protocol v5.3 Site</a>
-  </li>
-
-  <li class="project-item">
-    <div>Protocol-v5.5 (Bonus 48 Months)</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-v5.5-Original-Protocol-Bonus-48-Months-/">View Protocol v5.5 Site</a>
-  </li>
-
-  <li class="project-item">
-    <div>Protocol-v5.7 (Revised Bonus 36 Months)</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-v5.7-Revised-Protocol-Bonus-36-Months-3/">View Protocol v5.7 Site</a>
-  </li>
-
-  <li class="project-item">
-    <div>Protocol-v5.8 (Revised Bonus 48 Months)</div>
-    <a href="https://a-changer-plus-tard.github.io/Protocol-v5.8-Revised-Protocol-Bonus-48-Months/">View Protocol v5.8 Site</a>
-  </li>
-
-  <li class="project-item">
-    <div>BlockDAG-Protocol-v7.0-Definitive-Edition</div>
-    <a href="https://github.com/A-Changer-Plus-Tard/BlockDAG-Protocol-v7.0-Definitive-Edition/">View Protocol v7.0 Repo</a>
-  </li>
-
-</ul>
-
-</body>
-</html>
+    <div class="card">
+        <div class="card-title">Protocol-v5.5 (Bonus 48 Months)</div>
+        <a class="card-link" href="https://a-changer-plus-tard.github.io/Protocol-v5.5-Original-Protocol-Bonus-48-Months-/" target="_blank">
